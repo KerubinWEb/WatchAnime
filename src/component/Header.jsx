@@ -10,7 +10,7 @@ function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid >
-        <Navbar.Brand  className='text-danger fw-bold fs-3' href="#">AnimeWatch</Navbar.Brand>
+        <Navbar.Brand  className='text-danger fw-bold fs-3'>AnimeWatch</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,10 +18,10 @@ function Header() {
             style={{ maxHeight: '300px' }}
             navbarScroll
           >
-            <Nav.Link href="/" className='ms-5 text-light link1'>Home</Nav.Link>
-            <Nav.Link href="/Anime" className='ms-5 text-light link1'>Anime</Nav.Link>
-            <Nav.Link href="/Movie" className='ms-5 text-light link1'>Movie</Nav.Link>
-            <Nav.Link href="/Manga" className='ms-5 text-light link1'>Manga</Nav.Link>
+            <Link to="/" className='ms-5 text-light link1'>Home</Link>
+            <Link to="/Anime" className='ms-5 text-light link1'>Anime</Link>
+            <Link to="/Movie" className='ms-5 text-light link1'>Movie</Link>
+            <Link to="/Manga" className='ms-5 text-light link1'>Manga</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
